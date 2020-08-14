@@ -32,8 +32,8 @@ public enum Identity implements BaseEnum {
 - 在实体中加上注解`@Type`
 ```
 @Type(type = "com.apricotforest.common.convert.EnumType")
-    @Column(name = "_identity", columnDefinition = "varchar(20) DEFAULT NULL COMMENT '身份 1:DSM 2:RSM 3:市场'")
-    private Identity identity;
+@Column(name = "_identity", columnDefinition = "varchar(20) DEFAULT NULL COMMENT '身份 1:DSM 2:RSM 3:市场'")
+private Identity identity;
 ```
 
 ## 支持逻辑删除
