@@ -6,6 +6,8 @@ package com.apricotforest.common.enums;
  */
 public interface BaseEnum {
 
+    String getName();
+
     int getValue();
 
     String getDescription();
