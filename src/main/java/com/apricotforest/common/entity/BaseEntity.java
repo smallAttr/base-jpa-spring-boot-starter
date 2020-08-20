@@ -35,7 +35,7 @@ public class BaseEntity implements Serializable {
     private LocalDateTime updateTime = LocalDateTime.now();
 
     @Column(columnDefinition = "tinyint(1) not null default 0 comment '是否删除 1-已删除 0-未删除'")
-    private boolean deleted;
+    private Boolean deleted = Boolean.FALSE;
 
     @Version
     @Column(columnDefinition = "bigint not null default 0 comment '版本号'")
