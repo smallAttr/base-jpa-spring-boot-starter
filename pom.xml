@@ -108,17 +108,4 @@
         </plugins>
     </build>
 
-    <distributionManagement>
-        <repository>
-            <id>user-release</id>
-            <name>Internal Releases</name>
-            <url>http://nexus.xingshulin.com/content/repositories/releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>user-snapshots</id>
-            <name>Internal Snapshots</name>
-            <url>http://nexus.xingshulin.com/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
 </project>
