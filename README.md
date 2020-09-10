@@ -41,7 +41,7 @@ private Identity identity;
 ```
 @SpringBootApplication
 @EnableEurekaClient
-@ComponentScan(value = "com.apricotforest.common")
+@ComponentScan(value = "com.github.common")
 @EnableJpaAuditing
 @EnableJpaRepositories(repositoryFactoryBeanClass = BaseRepositoryFactoryBean.class)
 public class CompanyManageApplication {
