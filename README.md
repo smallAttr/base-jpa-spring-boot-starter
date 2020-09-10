@@ -6,9 +6,9 @@
 ```
 public enum Identity implements BaseEnum {
 
-    DSM(1, "DSM"),
-    RSM(2, "RSM"),
-    MARKET(3, "市场"),
+    PROFESSOR(1, "教授"),
+    TEACHER(2, "老师"),
+    STUDENT(3, "学生"),
     ;
     private int value;
     private String description;
@@ -31,8 +31,8 @@ public enum Identity implements BaseEnum {
 ```
 - 在实体中加上注解`@Type`
 ```
-@Type(type = "com.apricotforest.common.convert.EnumType")
-@Column(name = "_identity", columnDefinition = "varchar(20) DEFAULT NULL COMMENT '身份 1:DSM 2:RSM 3:市场'")
+@Type(type = "com.github.common.convert.EnumType")
+@Column(name = "_identity")
 private Identity identity;
 ```
 
@@ -44,10 +44,10 @@ private Identity identity;
 @ComponentScan(value = "com.github.common")
 @EnableJpaAuditing
 @EnableJpaRepositories(repositoryFactoryBeanClass = BaseRepositoryFactoryBean.class)
-public class CompanyManageApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CompanyManageApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 }
 ```
